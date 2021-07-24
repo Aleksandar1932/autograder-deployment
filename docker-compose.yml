@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  ml-model:
+    image: "autograder-ml-model:latest"
+    ports:
+      - "8081:5000"
+  frontend:
+    image: "autograder-frontend:latest"
+    ports:
+      - "8082:8086"
